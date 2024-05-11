@@ -1,0 +1,15 @@
+section {
+  display: flex;
+  }
+
+
+  li {
+    background-color: blue;
+  }
+
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
