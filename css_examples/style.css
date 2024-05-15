@@ -1,13 +1,9 @@
-h1 {
-    color: red;
-}
-
-div {
-    width: 100%;
-    max-width: 200px;
+.box {
+    width: 200px;
     height: 200px;
-
-}
-p {
-    color: grey;
+    background-color: green;
+    border: 15px solid red;
+    padding: 15px;
+    margin: 15px;
+    box-sizing: border-box;
 }
