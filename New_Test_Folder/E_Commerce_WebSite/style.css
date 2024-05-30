@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 * {
   padding: 0;
@@ -16,7 +15,6 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
 
 /*
 
@@ -43,9 +41,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-
 }
-
 
 .nav__container {
   width: 100%;
@@ -90,6 +86,65 @@ li {
 .nav__link--primary:hover {
   text-decoration: none;
 }
+.btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  text-align: center;
+  border: none;
+  color: #7342d6;
+  display: none;
+}
+
+.menu__backdrop {
+  position: absolute;
+  background-color: #242424;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+.menu__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list {
+  padding: 32px 0;
+}
+.menu__link {
+  font-size: 40px;
+  color: white;
+}
+
+.btn__menu--close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
+  color: white;
+}
+
+/*
+LANDING
+*/
 
 #landing {
   background-color: rgba(115, 66, 214, 0.1);
@@ -142,11 +197,11 @@ button:active {
   border: none;
 }
 .header__img--wrapper {
-padding: 20px;
-width: 100%;
-height: 100%;
-max-height: 50vh;
-z-index: 2;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  max-height: 50vh;
+  z-index: 2;
 }
 
 .container {
@@ -181,7 +236,7 @@ HIGHLIGHTS
 }
 
 #highlights:before {
-  background: url('assets/wave.svg');
+  background: url("assets/wave.svg");
   content: "";
   position: absolute;
   width: 101vw;
@@ -192,11 +247,10 @@ HIGHLIGHTS
   background-size: cover;
   background-repeat: no-repeat;
   transform: translateY(-100%);
-  
 }
 
 #highlights:after {
-  background: url('assets/wave.svg');
+  background: url("assets/wave.svg");
   content: "";
   position: absolute;
   width: 101vw;
@@ -207,13 +261,11 @@ HIGHLIGHTS
   background-size: cover;
   background-repeat: no-repeat;
   transform: translateY(100%) rotate(180deg);
-  
 }
 
 .highlight__wrapper {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .highlight {
@@ -255,11 +307,9 @@ FEATURES
 
 */
 
-
 #features {
   padding-top: 8vw;
   background-color: rgba(115, 66, 214, 0.1);
-
 }
 
 .books {
@@ -275,7 +325,6 @@ FEATURES
   max-height: 380px;
   transition: all 300ms ease;
   cursor: not-allowed;
-
 }
 .book__title {
   font-size: 20px;
@@ -290,7 +339,6 @@ FEATURES
 
 .book:hover .book__img {
   transform: scale(1.03);
-
 }
 .book__title:hover {
   text-decoration: underline;
@@ -316,7 +364,6 @@ Latest Books
 #recent {
   padding-top: 8vw;
   background-color: rgba(115, 66, 214, 0);
-
 }
 
 /*
@@ -339,8 +386,8 @@ footer {
 }
 
 .footer__logo--img {
- width: 160px;
- filter: grayscale(1) invert(1); 
+  width: 160px;
+  filter: grayscale(1) invert(1);
 }
 
 .footer__link,
@@ -354,4 +401,64 @@ footer {
 
 .footer__link {
   padding: 0 8px;
+}
+
+@media (max-width: 550px) {
+  .nav__links {
+    display: none;
+  }
+}
+
+.btn__menu {
+  display: block;
+}
+
+/*SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+
+@media (max-width: 768px) {
+  .header__description {
+    padding: 0 24px;
+}
+
+h1 {
+  font-size: 40px;
+
+}
+
+h2 {
+  font-size: 26px;
+
+}
+button {
+  font-size: 18px;
+
+}
+
+.book {
+  width: 50%;
+}
+
+}
+
+
+
+
+
+/* SMALL PHONES, LARGE SMARTPHONES */
+
+@media (max-width: 550px) {
+  .btn__menu {
+    display: block;
+  }
+.nav__links {
+  display: none;
+}
+
+.highlight {
+  width: 100%;
+}
+
+.highlight:not(:last-child) {
+  margin-bottom: 24px;
+}
 }
