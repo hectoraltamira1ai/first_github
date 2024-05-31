@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  max-width: 1200px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 auto;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0 15px;
+  
+}
+.personal__logo {
+  padding-left: 0 0 5px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+.logo {
+  width: 50px;
+  height: 50px; 
+  margin: 0px 15px 0px 0px;
+}
+
+.nav__link--anchor {
+  margin: 0 30px;
+  padding: 0px 0px 5px;
+
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  transition: opacity 300ms ease;
+}
+
+.nav__link--anchor--primary {
+  background-color: #6030b1;
+  padding: 15px 40px;
+  border-radius: 50px;
+  color: rgb(247, 250, 252);
+  transition: all 300ms ease;
+}
+.nav__link--list {
+  display: flex;
+
+}
+
+li {
+  list-style-type: none;
+  font-size: 17.5px;
+}
+
+
+header {
+  background-color: #eadcff;
+  height: calc(100vh - 70px);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
